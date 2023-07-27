@@ -96,9 +96,11 @@ in {
     services = {
       telegraf = {
         enable = true;
-        agent = {
-          interval = "60s";
-          snmp_translator = "gosmi";
+        extraConfig = {
+          agent = {
+            interval = "60s";
+            snmp_translator = "gosmi";
+          };
         };
       };
     };
