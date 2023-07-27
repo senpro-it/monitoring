@@ -91,7 +91,7 @@ in {
         '';
       };
     };
-  };.
+  };
   config = (lib.mkIf config.senpro-it.telegraf.enable {
     services = {
       telegraf = {
